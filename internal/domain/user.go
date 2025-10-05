@@ -1,0 +1,18 @@
+package domain
+
+import "time"
+
+type User struct {
+	ID        uint      `json:"id"`
+	FirstName string    `json:"first_name"`
+	LastName  string    `json:"last_name"`
+	Email     string    `json:"email"`
+	Password  string    `json:"password"`
+	Phone     string    `json:"phone"`
+	Code      int       `json:"code"`
+	Expiry    time.Time `json:"expiry"`
+	Verified  bool      `json:"verified"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
+	UserType  string    `json:"user_type"`
+}
